@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="DropDownUserMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="159.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="EditAccountButton" mnemonicParsing="false" prefHeight="46.0" prefWidth="133.0" style="-fx-background-color: #FFFFFF;" text="Edit Account">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/EditAccount.PNG" />
+               </image></ImageView>
+         </graphic>
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="100.0" startX="-57.0" strokeWidth="2.0" />
+      <Button fx:id="LogOutButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="107.0" style="-fx-background-color: #FFFFFF;" text="Log out">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LogOut.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

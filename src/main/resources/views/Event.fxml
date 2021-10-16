@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreateEditEventController">
+    <children>
+    <AnchorPane layoutX="393.0" layoutY="288.0" minHeight="0.0" minWidth="0.0" prefHeight="280.0" prefWidth="398.0" />
+      <ListView layoutY="47.0" prefHeight="596.0" prefWidth="205.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" />
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="205.0" layoutY="47.0" prefHeight="603.0" prefWidth="795.0" vbarPolicy="NEVER" />
+      <ToggleButton layoutX="915.0" layoutY="14.0" mnemonicParsing="false" text="Edit mode" />
+      <Button layoutX="813.0" layoutY="14.0" mnemonicParsing="false" text="Add Event" />
+      <HBox layoutY="1.0" prefHeight="52.0" prefWidth="205.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label text="Label" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

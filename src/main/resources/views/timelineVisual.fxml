@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="20.0" prefWidth="710.0" style="-fx-background-color: #434FE2; -fx-text-fill: #FFFFFF; -fx-background-radius: 7;" translateX="20.0" translateY="13.0">
+         <children>
+            <Line endX="100.0" fill="WHITE" startX="730.0" stroke="WHITE" strokeMiterLimit="0.0" style="-fx-stroke-dash-array: 20; -fx-letter-spacing: 10;" translateY="1.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-word-spacing: 15;" text="100 101 102 103 104 105 106" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" startX="730.0" stroke="WHITE" strokeMiterLimit="0.0" style="-fx-stroke-dash-array: 20;" translateY="-1.0" />
+         </children></VBox>
+   </children>
+</HBox>

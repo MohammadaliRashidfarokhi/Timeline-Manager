@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fx:id="EventLineCircleConnector" fill="#434fe2" radius="7.0" stroke="#434fe2" strokeType="INSIDE" translateX="1.0" translateY="322.0" />
+      <Line fx:id="EventLineConnector" endX="-96.12179565429688" endY="946.8787231445312" startX="-96.12132263183594" startY="628.5858154296875" stroke="#434fe2" strokeWidth="3.0" translateX="5.0" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="110.0" prefWidth="402.0">
+         <children>
+            <ImageView fx:id="EventImage" fitHeight="110.0" fitWidth="121.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0" />
+            <VBox layoutX="133.0" prefHeight="110.0" prefWidth="270.0">
+               <children>
+                  <Label fx:id="EventLabel" text="Event 1" textFill="#434fe2">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="EventDescription" text="11 Jan 1905" textFill="#9a9898">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

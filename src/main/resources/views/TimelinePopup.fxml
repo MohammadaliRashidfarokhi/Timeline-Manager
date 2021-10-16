@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="createNewTimeline" minHeight="400.0" minWidth="517.0" prefHeight="400.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="56.0" prefWidth="517.0">
+         <children>
+            <Label fx:id="WindowTitle" prefHeight="57.0" prefWidth="517.0" style="-fx-background-color: #434FE2;" text="New Timeline" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="timelineName" prefHeight="59.0" prefWidth="548.0" promptText="Timeline Name">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Label fx:id="timeUnitLabel" prefHeight="26.0" prefWidth="142.0" text="Time Unit" textFill="#807d7d">
+         <VBox.margin>
+            <Insets left="20.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="timeUnitBox" prefHeight="48.0" prefWidth="548.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </VBox.margin>
+         <items>
+            <FXCollections fx:id="collection" fx:factory="observableArrayList">
+               <String fx:value="Centuries" />
+               <String fx:value="Years" />
+               <String fx:value="Months" />
+               <String fx:value="Days" />
+               <String fx:value="Hours" />
+               <String fx:value="Minutes" />
+               <String fx:value="Seconds" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label fx:id="timeFrameLabel" prefHeight="26.0" prefWidth="142.0" text="Time Frame" textFill="#807d7d">
+         <VBox.margin>
+            <Insets left="20.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="50.0" prefWidth="508.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </VBox.margin>
+         <children>
+            <DatePicker fx:id="startDatePicker" prefHeight="38.0" prefWidth="230.0" promptText="Start Date">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></DatePicker>
+            <Line endX="20.0" layoutX="-10.0" startX="-1.0">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Line>
+            <DatePicker fx:id="endDatePicker" prefHeight="39.0" prefWidth="230.0" promptText="End Date">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox prefHeight="49.0" prefWidth="517.0">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="Cancel">
+               <HBox.margin>
+                  <Insets left="280.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="createButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #434FE2;" text="Create" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
